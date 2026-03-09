@@ -10,7 +10,7 @@ spring:
 
 jwt:
   algorithm:
-    key: ${JWT_KEY}
-  issuer: ${JWT_ISSUER}
+    key: ${KEY}
+  issuer: ${ISSUER}
   expiration:
-    time: ${JWT_EXPIRATION_TIME}
+    time: ${TIME}
