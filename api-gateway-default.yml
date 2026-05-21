@@ -9,11 +9,22 @@ spring:
           uri: lb://booking-service
           predicates:
             - Path=/bookings/**
+
         - id: flight-service
           uri: lb://flight-service
           predicates:
             - Path=/flights/**
+
         - id: user-service
           uri: lb://user-service
           predicates:
             - Path=/api/users/**
+
+jwt:
+  algorithm:
+    key: ${KEY}
+
+  issuer: ${ISSUER}
+
+  expiration:
+    time: ${TIME}
