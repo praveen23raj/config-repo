@@ -8,9 +8,11 @@ spring:
     username: ${DB_USERNAME}
     password: ${DB_PASSWORD}
 
- jwt:
+jwt:
   algorithm:
     key: ${KEY}
+
   issuer: ${ISSUER}
+
   expiration:
-    time: ${TIME} 
+    time: ${TIME}
