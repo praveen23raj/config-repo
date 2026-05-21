@@ -8,14 +8,16 @@ spring:
     username: ${DB_USERNAME}
     password: ${DB_PASSWORD}
 
- jwt:
-  algorithm:
-    key: ${KEY}
-  issuer: ${ISSUER}
-  expiration:
-    time: ${TIME}    
-
   data:
     redis:
       host: localhost
       port: 6379
+
+jwt:
+  algorithm:
+    key: ${KEY}
+
+  issuer: ${ISSUER}
+
+  expiration:
+    time: ${TIME}
