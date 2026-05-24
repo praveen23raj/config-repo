@@ -15,11 +15,11 @@ spring:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
 
-  jwt:
-    algorithm:
-      key: ${KEY}
+jwt:
+  algorithm:
+    key: ${KEY}
 
-    issuer: ${ISSUER}
+  issuer: ${ISSUER}
 
-    expiration:
-      time: ${TIME}
+  expiration:
+    time: ${TIME}
